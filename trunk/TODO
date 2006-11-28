@@ -1,0 +1,6 @@
+timos:
+	- write a proper test-suite for all the defined core functions
+	- implement the core functions
+	- try to get some "official" dlx-docs for example the opcode specs
+	  View gcc source and ask the austrians :-)
+	- Provide a README (at least for copyright info)

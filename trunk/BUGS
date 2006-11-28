@@ -1,0 +1,2 @@
+* at the moment dlx_mem is word-adressable only (32 bit), but in real life it
+  has to be byte-adressable (8 bit). (I didn't read the docs :-))

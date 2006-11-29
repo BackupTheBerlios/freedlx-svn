@@ -1,7 +1,7 @@
 #!/usr/bin/make
 
 CC = gcc
-CFLAGS = -Wall -ggdb
+CFLAGS = -Wall -ansi -pedantic -ggdb
 
 test: test.o core.o
 	$(CC) test.o core.o -o test

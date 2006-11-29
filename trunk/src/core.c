@@ -12,7 +12,8 @@ void errorhandler() {
 }
 
 void set_mem_at_addr(dlx_word addr, dlx_word data) {
-	dlx_mem *aktuell = memory;
+	dlx_mem *aktuell,*new;
+	aktuell = memory;
 	while (aktuell != NULL) {
 		if (aktuell->addr == addr) {
 			aktuell->data = data;
@@ -22,7 +23,7 @@ void set_mem_at_addr(dlx_word addr, dlx_word data) {
 			aktuell = aktuell->next;
 		}
 	}
-	dlx_mem *new = (dlx_mem *) malloc( sizeof(dlx_mem) );
+	new = (dlx_mem *) malloc( sizeof(dlx_mem) );
 	if (new == NULL) {
 		errorhandler();
 	}
